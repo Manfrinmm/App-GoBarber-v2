@@ -93,10 +93,7 @@ Curta o momento (～￣▽￣)～`,
         behavior={Platform.OS === "ios" ? "padding" : undefined}
         enabled
       >
-        <ScrollView
-          keyboardShouldPersistTaps="handled"
-          contentContainerStyle={{ flex: 1 }}
-        >
+        <ScrollView keyboardShouldPersistTaps="handled" style={{ flex: 1 }}>
           <Container>
             <Image source={logoImg} />
             <View>

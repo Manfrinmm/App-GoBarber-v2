@@ -39,7 +39,7 @@ const SignIn: React.FC = () => {
   const passwordRef = useRef<TextInput>(null);
 
   const navigation = useNavigation();
-  const { signIn, user } = useAuth();
+  const { signIn } = useAuth();
 
   const handleSignIn = useCallback(
     async (data: SignInFormData) => {
@@ -85,10 +85,7 @@ const SignIn: React.FC = () => {
         behavior={Platform.OS === "ios" ? "padding" : undefined}
         enabled
       >
-        <ScrollView
-          keyboardShouldPersistTaps="handled"
-          contentContainerStyle={{ flex: 1 }}
-        >
+        <ScrollView keyboardShouldPersistTaps="handled" style={{ flex: 1 }}>
           <Container>
             <Image source={logoImg} />
             <View>
